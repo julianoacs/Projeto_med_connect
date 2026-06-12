@@ -1,36 +1,52 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Medical Plus
 
-## Getting Started
+## Sobre o projeto
+O **Medical Plus** é um sistema web desenvolvido para auxiliar no gerenciamento de atendimentos em unidades de saúde e seu 
+objetivo é otimizar o processo de atendimento, tornando-o mais prático, organizado e acessível.
 
-First, run the development server:
+---
+
+## Tecnologias utilizadas
+- Java
+- Spring Boot
+- Thymeleaf
+- HTML, CSS e JavaScript
+- Maven
+
+---
+
+## Como clonar o projeto
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/julianoacs/Projeto_medical_plus.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Como rodar o sistema
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Pré-requisitos:
+- Java JDK 17+ instalado
+- Maven instalado
 
-## Learn More
+### Passos:
 
-To learn more about Next.js, take a look at the following resources:
+1. Acesse a pasta do projeto:
+```bash
+cd Projeto_medical_plus
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+2. Compile o projeto:
+```bash
+mvn clean install
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+3. Execute a aplicação:
+```bash
+mvn spring-boot:run
+```
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+4. Acesse no navegador:
+```bash
+http://localhost:8080
+```
