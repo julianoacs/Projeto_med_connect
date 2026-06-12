@@ -1,0 +1,139 @@
+.pacients-admin-section {
+  width: 87%;
+  height: 650px;
+  margin-top: 90px;
+  margin-left: 85px;
+  padding: 34px;
+  border-radius: 30px;
+  background: rgba(255, 255, 255, 0.78);
+  box-shadow: 0 20px 46px rgba(15, 23, 42, 0.09);
+  overflow: hidden;
+}
+
+.pacients-admin-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 26px;
+}
+
+.Pacients-title {
+  font-size: 26px;
+  font-weight: 950;
+  color: #1f2937;
+  letter-spacing: 0.3px;
+}
+
+.pacients-admin-list {
+  height: 540px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-auto-rows: 126px;
+  gap: 18px;
+  overflow: hidden;
+}
+
+.pacients-admin-card {
+  width: 100%;
+  height: 126px;
+  padding: 20px 22px;
+  border-radius: 24px;
+  border: 1px solid rgba(226, 232, 240, 0.95);
+  background: rgba(255, 255, 255, 0.86);
+  display: grid;
+  grid-template-columns: 72px 1fr;
+  align-items: center;
+  gap: 22px;
+  text-align: left;
+  overflow: hidden;
+  cursor: default;
+  transition:
+    border-color 0.22s ease,
+    background 0.22s ease,
+    box-shadow 0.22s ease;
+}
+
+.pacients-admin-card:hover {
+  border-color: rgba(42, 157, 138, 0.45);
+  background: rgba(242, 252, 250, 0.86);
+  box-shadow: 0 14px 28px rgba(15, 23, 42, 0.07);
+}
+
+.pacients-admin-avatar {
+  width: 62px;
+  height: 62px;
+  border-radius: 50%;
+  background: rgba(42, 157, 138, 0.12);
+  border: 2px solid rgba(42, 157, 138, 0.16);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.pacients-admin-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+.pacients-admin-avatar span {
+  font-size: 22px;
+  font-weight: 950;
+  color: #2a9d8a;
+}
+
+.pacients-admin-sheet {
+  min-width: 0;
+  width: 100%;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 150px;
+  grid-template-rows: auto auto;
+  column-gap: 28px;
+  row-gap: 18px;
+  overflow: hidden;
+}
+
+.pacients-admin-value {
+  min-width: 0;
+  font-size: 15px;
+  font-weight: 950;
+  color: #1f2937;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.pacients-admin-value-right {
+  text-align: right;
+  color: #2a9d8a;
+}
+
+.pacients-status-online {
+  color: #2a9d8a !important;
+}
+
+.pacients-status-offline {
+  color: #c52727 !important;
+}
+
+.pacients-validated {
+  color: #2a9d8a !important;
+}
+
+.pacients-admin-empty {
+  min-height: 150px;
+  grid-column: 1 / -1;
+  border-radius: 22px;
+  border: 1px dashed rgba(148, 163, 184, 0.38);
+  background: rgba(255, 255, 255, 0.48);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #64748b;
+  font-size: 14px;
+  font-weight: 850;
+}

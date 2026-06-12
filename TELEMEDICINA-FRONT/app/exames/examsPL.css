@@ -1,0 +1,329 @@
+.exm-requested-section {
+  width: 90%;
+  margin-left: 80px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  align-items: flex-start;
+  transform: translateY(30px);
+}
+
+.exm-requested-left {
+  height: 600px;
+  padding: 28px;
+  border-radius: 28px;
+  background: rgba(255, 255, 255, 0.62);
+  border: 1px solid rgba(148, 163, 184, 0.24);
+  backdrop-filter: blur(18px);
+  box-shadow:
+    0 24px 60px rgba(15, 23, 42, 0.10),
+    inset 0 1px 0 rgba(255, 255, 255, 0.75);
+  overflow: hidden;
+}
+
+.exm-panel-card-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.exm-panel-card-header h3 {
+  margin: 0;
+  color: #1f2f46;
+  font-size: 25px;
+  font-weight: 950;
+  letter-spacing: -0.6px;
+}
+
+.exm-panel-card-header p {
+  max-width: 390px;
+  margin: 7px 0 0 0;
+  color: #718096;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.exm-panel-pill {
+  min-width: 118px;
+  height: 34px;
+  padding: 0 16px;
+  border-radius: 999px;
+  background: rgba(42, 157, 138, 0.11);
+  border: 1px solid rgba(42, 157, 138, 0.22);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #2a9d8a;
+  font-size: 11px;
+  font-weight: 950;
+  letter-spacing: 0.7px;
+}
+
+.exm-consulta-under-list {
+  margin-top: 26px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  max-height: 250px;
+  overflow-y: auto;
+  padding-top: 4px;
+  padding-right: 4px;
+  padding-bottom: 8px;
+}
+
+.exm-consulta-under-list::-webkit-scrollbar {
+  width: 7px;
+}
+
+.exm-consulta-under-list::-webkit-scrollbar-track {
+  background: rgba(148, 163, 184, 0.14);
+  border-radius: 999px;
+}
+
+.exm-consulta-under-list::-webkit-scrollbar-thumb {
+  background: rgba(42, 157, 138, 0.45);
+  border-radius: 999px;
+}
+
+.exm-consulta-under-option {
+  width: 100%;
+  min-height: 88px;
+  padding: 15px 18px;
+  border: 1px solid rgba(148, 163, 184, 0.22);
+  border-radius: 22px;
+  background: rgba(255, 255, 255, 0.72);
+  display: grid;
+  grid-template-columns: 50px minmax(0, 1fr) auto 18px;
+  align-items: center;
+  gap: 14px;
+  cursor: pointer;
+  text-align: left;
+  box-shadow: 0 12px 28px rgba(15, 23, 42, 0.045);
+  transition:
+    transform 0.22s ease,
+    border-color 0.22s ease,
+    background 0.22s ease,
+    box-shadow 0.22s ease;
+}
+
+.exm-consulta-under-option:not(.exm-consulta-under-option-active):hover {
+  transform: translateY(-2px);
+  border-color: rgba(42, 157, 138, 0.35);
+  background: rgba(255, 255, 255, 0.94);
+  box-shadow: 0 18px 36px rgba(15, 23, 42, 0.08);
+}
+
+.exm-consulta-under-option-active {
+  border-color: rgba(42, 157, 138, 0.68);
+  background: linear-gradient(
+    135deg,
+    rgba(42, 157, 138, 0.14),
+    rgba(255, 255, 255, 0.94)
+  );
+  box-shadow:
+    0 16px 34px rgba(42, 157, 138, 0.10),
+    0 8px 20px rgba(15, 23, 42, 0.045);
+}
+
+.exm-consulta-under-option-active:hover {
+  transform: translateY(-1px);
+  border-color: rgba(42, 157, 138, 0.82);
+  background: linear-gradient(
+    135deg,
+    rgba(42, 157, 138, 0.18),
+    rgba(255, 255, 255, 0.98)
+  );
+  box-shadow:
+    0 18px 38px rgba(42, 157, 138, 0.13),
+    0 10px 24px rgba(15, 23, 42, 0.06);
+}
+
+.exm-consulta-under-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 17px;
+  background: rgba(42, 157, 138, 0.12);
+  border: 1px solid rgba(42, 157, 138, 0.20);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #2a9d8a;
+  font-size: 19px;
+  font-weight: 950;
+}
+
+.exm-consulta-under-main {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.exm-consulta-under-main strong {
+  color: #223047;
+  font-size: 16px;
+  font-weight: 950;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.exm-consulta-under-main span {
+  color: #718096;
+  font-size: 13px;
+  font-weight: 750;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.exm-consulta-under-meta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 5px;
+}
+
+.exm-consulta-under-meta strong {
+  color: #223047;
+  font-size: 14px;
+  font-weight: 950;
+}
+
+.exm-consulta-under-meta span {
+  color: #718096;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.exm-consulta-under-arrow {
+  color: #2a9d8a;
+  font-size: 31px;
+  font-weight: 400;
+  line-height: 1;
+}
+
+.exm-selected-exam-view {
+  margin-top: 30px;
+  padding-top: 26px;
+  border-top: 1px solid rgba(148, 163, 184, 0.22);
+}
+
+.exm-selected-exam-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.exm-selected-exam-header h3 {
+  margin: 0;
+  color: #1f2f46;
+  font-size: 23px;
+  font-weight: 950;
+  letter-spacing: -0.5px;
+}
+
+.exm-selected-exam-header span {
+  min-width: 84px;
+  height: 28px;
+  padding: 0 12px;
+  border-radius: 999px;
+  background: rgba(42, 157, 138, 0.11);
+  border: 1px solid rgba(42, 157, 138, 0.22);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #2a9d8a;
+  font-size: 10px;
+  font-weight: 950;
+  letter-spacing: 0.65px;
+}
+
+.exm-selected-exam-card {
+  margin-top: 16px;
+  padding: 18px;
+  border-radius: 22px;
+  border: 1px solid rgba(42, 157, 138, 0.34);
+  background: linear-gradient(
+    135deg,
+    rgba(42, 157, 138, 0.12),
+    rgba(255, 255, 255, 0.96)
+  );
+  display: grid;
+  grid-template-columns: 58px minmax(0, 1fr);
+  align-items: center;
+  gap: 16px;
+  box-shadow:
+    0 16px 34px rgba(42, 157, 138, 0.10),
+    0 8px 20px rgba(15, 23, 42, 0.045);
+}
+
+.exm-selected-exam-icon {
+  width: 58px;
+  height: 58px;
+  border-radius: 19px;
+  background: rgba(42, 157, 138, 0.14);
+  border: 1px solid rgba(42, 157, 138, 0.24);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+}
+
+.exm-selected-exam-info {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.exm-selected-exam-info strong {
+  color: #1f2f46;
+  font-size: 17px;
+  font-weight: 950;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.exm-selected-exam-info span {
+  color: #2a9d8a;
+  font-size: 13px;
+  font-weight: 900;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.exm-selected-exam-info small {
+  color: #718096;
+  font-size: 12px;
+  font-weight: 850;
+}
+
+.exm-empty-state {
+  min-height: 130px;
+  padding: 22px;
+  border-radius: 20px;
+  border: 1px dashed rgba(148, 163, 184, 0.42);
+  background: rgba(248, 250, 252, 0.68);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #718096;
+  font-size: 14px;
+  font-weight: 800;
+  text-align: center;
+}
+
+.exm-error-state {
+  color: #c52727;
+  background: rgba(197, 39, 39, 0.07);
+  border-color: rgba(197, 39, 39, 0.26);
+}
+
+.exm-my-section .exm-panel-pill {
+  margin-top: 15px;
+}

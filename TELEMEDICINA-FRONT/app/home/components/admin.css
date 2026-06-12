@@ -1,0 +1,104 @@
+.admin-card {
+  width: 600px;
+  height: 250px;
+  flex: 0 0 600px;
+  border-radius: 28px;
+  background: rgba(255, 255, 255, 0.86);
+  border: 2px solid rgba(245, 245, 245, 0.9);
+  box-shadow: 0 28px 55px rgba(15, 23, 42, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  cursor: pointer;
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    background 0.25s ease;
+}
+
+.admin-card:hover {
+  transform: translateY(-6px);
+  background: rgba(255, 255, 255, 0.92);
+  box-shadow: 0 1px 35px rgba(0, 0, 0, 0.30);
+}
+
+.admin-card-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: visible;
+}
+
+.admin-image {
+  width: 80%;
+  object-fit: contain;
+  display: block;
+}
+
+.admin-card-title {
+  transform: translateX(-5px) translateY(-5px);
+  font-size: 35px;
+  font-weight: 900;
+  line-height: 1.1;
+  color: #2a9d8a;
+  letter-spacing: 0.1rem;
+  margin-bottom: 20px;
+}
+
+.admin-card-text {
+  padding: 24px 32px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.admin-card-subtext {
+  margin: 18px 0 0;
+  max-width: 210px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.35;
+  color: #64748b;
+  margin-bottom: 24px;
+  margin-left: 18px;
+}
+
+.admin-card-button {
+  position: relative;
+  overflow: hidden;
+  padding: 15px 25px;
+  border: none;
+  border-radius: 12px;
+  background: #2a9d8a;
+  color: #ffffff;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 1;
+  white-space: nowrap;
+  cursor: pointer;
+  box-shadow: 0 8px 16px rgba(15, 23, 42, 0.14);
+  transform: translateY(5px) translateX(30px);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    background 0.3s ease;
+}
+
+.admin-card-button::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0);
+  transition: background 0.3s ease;
+  pointer-events: none;
+}
+
+.admin-card-button:hover {
+  transform: scale(1.02) translateY(4px) translateX(30px);
+  box-shadow: 0 12px 22px rgba(15, 23, 42, 0.18);
+}
+
+.admin-card-button:hover::before {
+  background: rgba(255, 255, 255, 0.15);
+}

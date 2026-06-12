@@ -1,0 +1,74 @@
+.Profile-main-cards {
+    position: absolute;
+    left: 350px;
+    top: 20px;
+    width: 780px;
+    display: flex;
+    flex-direction: column;
+}
+
+.Profile-tabs {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 50px 20px 50px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.info-tab,
+.historic-tab,
+.exams-tab {
+    position: relative;
+    height: 40px;
+    padding: 0 25px;
+    border: 0;
+    border-radius: 10px;
+    background: transparent;
+    color: #4f5d7b;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.info-tab span,
+.historic-tab span,
+.exams-tab span {
+    position: relative;
+    z-index: 2;
+    white-space: nowrap;
+}
+
+.info-tab:hover,
+.historic-tab:hover,
+.exams-tab:hover {
+    color: #2a9d8a;
+}
+
+.selected-tab {
+    color: #2a9d8a;
+}
+
+.profile-tab-line {
+    position: absolute;
+    width: 2px;
+    height: 0;
+    border-radius: 999px;
+    background: #2a9d8a;
+    transform: translateY(0%);
+}
+
+.profile-tab-line.left {
+    left: 8px;
+}
+
+.profile-tab-line.right {
+    right: 8px;
+}
+
+.info-tab:hover .profile-tab-line,
+.historic-tab:hover .profile-tab-line,
+.exams-tab:hover .profile-tab-line,
+.selected-tab:hover .profile-tab-line {
+    height: 30px;
+}

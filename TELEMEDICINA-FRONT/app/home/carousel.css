@@ -1,0 +1,23 @@
+.carousel {
+  width: 100%;
+}
+
+.carousel-info {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 34px;
+}
+
+.carousel-window {
+  width: 1060px;
+  overflow: hidden;
+}
+
+.carousel-track {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  transition: transform 0.35s ease;
+}

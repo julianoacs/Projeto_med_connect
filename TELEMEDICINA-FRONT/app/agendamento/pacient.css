@@ -1,0 +1,58 @@
+.agd-tabs {
+  width: 87%;
+  margin-top: 10px;
+  margin-left: 80px;
+  display: flex;
+  align-items: center;
+  gap: 100px;
+  border-bottom: 1px solid rgba(148, 163, 184, 0.28);
+}
+
+.agd-tab-next,
+.agd-tab-my {
+  height: 60px;
+  border: none;
+  background: transparent;
+  color: #4f5d7b;
+  font-size: 17px;
+  font-weight: 900;
+  letter-spacing: 0.6px;
+  cursor: pointer;
+  position: relative;
+  transition:
+    color 0.4s ease;
+}
+
+.agd-tab-next:hover,
+.agd-tab-my:hover {
+  color:  #2a9d8a;
+}
+
+.agd-tab-active {
+  color: #2a9d8a;
+}
+
+.agd-tab-active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -1px;
+  height: 3px;
+  border-radius: 999px;
+  background: #2a9d8a;
+  animation: agdTabLine 0.24s ease forwards;
+}
+
+@keyframes agdTabLine {
+  from {
+    transform: scaleX(0.35);
+    opacity: 0;
+  }
+
+  to {
+    transform: scaleX(1);
+    opacity: 1;
+  }
+}
+

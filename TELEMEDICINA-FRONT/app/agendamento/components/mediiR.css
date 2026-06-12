@@ -1,0 +1,123 @@
+.med-agd-detail-header {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 18px;
+
+}
+
+.med-agd-detail-header h3 {
+  font-size: 22px;
+  font-weight: 950;
+  color: #1f2937;
+}
+
+.med-agd-detail-header p {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 15px;
+  font-weight: 750;
+  color: #64748b;
+}
+
+.med-agd-detail-badge {
+  width: fit-content;
+  height: 32px;
+  padding: 0 15px;
+  border-radius: 999px;
+  background: rgba(42, 157, 138, 0.12);
+  color: #2a9d8a;
+  font-size: 12px;
+  font-weight: 950;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 14px;
+}
+
+.med-agd-detail-card {
+  margin-top: 5px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 18px;
+  border: 1px solid rgba(226, 232, 240, 0.9);
+  background: rgba(255, 255, 255, 0.72);
+  padding: 18px 20px;
+}
+
+.med-agd-detail-card h4 {
+  font-size: 16px;
+  font-weight: 950;
+  color: #1f2937;
+  margin-bottom: 14px;
+}
+
+.med-agd-detail-row {
+  min-height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.med-agd-detail-row span {
+  font-size: 13px;
+  font-weight: 800;
+  color: #64748b;
+}
+
+.med-agd-detail-row strong {
+  font-size: 14px;
+  font-weight: 950;
+  color: #1f2937;
+  text-align: right;
+}
+
+.med-agd-actions {
+  margin-top: 24px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+.med-agd-refuse-button,
+.med-agd-accept-button {
+  height: 48px;
+  border: none;
+  border-radius: 14px;
+  font-size: 13px;
+  font-weight: 950;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+}
+
+.med-agd-refuse-button {
+  background: #ad1d1d;
+  color: #ffffff;
+  box-shadow: 0 4px 18px rgba(157, 42, 42, 0.22);
+}
+
+.med-agd-accept-button {
+  background: #2a9d8a;
+  color: #ffffff;
+  box-shadow: 0 4px 18px rgba(42, 157, 138, 0.22);
+}
+
+.med-agd-action-error {
+  margin-top: 14px;
+  padding: 12px 14px;
+  border-radius: 12px;
+  background: rgba(220, 38, 38, 0.08);
+  border: 1px solid rgba(220, 38, 38, 0.18);
+  color: #b91c1c;
+  font-size: 12px;
+  font-weight: 850;
+  line-height: 1.35;
+}
+
+.med-agd-refuse-button:disabled,
+.med-agd-accept-button:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+}

@@ -1,0 +1,101 @@
+.card-actions {
+  display: flex;
+  align-items: flex-start;
+}
+
+.next-consult-card {
+  width: 1235px;
+  height: 350px;
+  padding: 20px 30px;
+  border-radius: 28px;
+  background: rgba(255, 255, 255, 0.82);
+  border: 2px solid rgba(245, 245, 245, 0.9);
+  box-shadow: 0 28px 55px rgba(15, 23, 42, 0.08);
+  transform: translateY(-20px) translateX(35px);
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    background 0.25s ease;
+}
+
+.next-consult-card:hover {  
+  transform: translateY(-26px) translateX(35px);
+  background: rgba(255, 255, 255, 0.92);
+  box-shadow: 0 1px 35px rgba(0, 0, 0, 0.30);
+}
+
+
+.next-consult-icon {
+  width: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  border-radius: 16px;
+  background: rgba(42, 157, 138, 0.12);
+  font-size: 22px;
+}
+
+.next-consult-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 30px;
+}
+
+.next-consult-heading {
+  font-size: 25px;
+  font-weight: 800;
+  color: #1e293b;
+  letter-spacing: -0.6px;
+  line-height: 1;
+}
+
+.next-consult-status-box {
+  margin-left: auto;
+  padding: 14px 14px;
+  border-radius: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+    transform: translateX(-40px);
+}
+
+.next-consult-status {
+  font-size: 15px;
+  font-weight: 900;
+  line-height: 1;
+  white-space: nowrap;
+  z-index: 11;
+
+}
+
+.consult-pipe {
+  width: 2px;
+  height: 200px;
+  margin-left: 50px;
+  margin-right: 50px;
+  border-radius: 1999px;
+  background: rgba(42, 157, 138, 0.219);
+}
+
+.next-consult-clock-icon {
+  width: 40px;
+  width: 40px;
+  object-fit: contain;
+  flex-shrink: 0;
+  opacity: 0.72;
+  flex-shrink: 0;
+  transform: translateY(-1px);
+}
+
+.next-consult-pc-icon {
+  width: 40px;
+  width: 40px;
+  object-fit: contain;
+  flex-shrink: 0;
+  opacity: 0.72;
+  flex-shrink: 0;
+  transform: translateY(-1px);
+}

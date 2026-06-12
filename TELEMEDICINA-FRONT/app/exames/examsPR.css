@@ -1,0 +1,414 @@
+.exm-requested-right {
+  align-self: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  min-width: 0;
+}
+
+.exm-selected-card,
+.exm-upload-card {
+  width: 100%;
+  
+  border-radius: 28px;
+  background: rgba(255, 255, 255, 0.66);
+  border: 1px solid rgba(148, 163, 184, 0.24);
+  backdrop-filter: blur(18px);
+  box-shadow:
+    0 24px 58px rgba(15, 23, 42, 0.09),
+    inset 0 1px 0 rgba(255, 255, 255, 0.78);
+}
+
+.exm-selected-card {
+  height: 250px;
+  padding: 24px 26px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.exm-upload-card {
+  padding: 22px 26px 20px 26px;
+  border-radius: 26px;
+}
+
+.exm-selected-card .exm-panel-card-header,
+.exm-upload-card .exm-panel-card-header {
+  flex-shrink: 0;
+}
+
+.exm-doctor-request-list {
+  margin-top: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  flex: 1;
+  min-height: 0;
+  overflow-y: auto;
+  padding-top: 3px;
+  padding-right: 4px;
+  padding-bottom: 6px;
+}
+
+.exm-doctor-request-list::-webkit-scrollbar {
+  width: 7px;
+}
+
+.exm-doctor-request-list::-webkit-scrollbar-track {
+  background: rgba(148, 163, 184, 0.14);
+  border-radius: 999px;
+}
+
+.exm-doctor-request-list::-webkit-scrollbar-thumb {
+  background: rgba(42, 157, 138, 0.45);
+  border-radius: 999px;
+}
+
+.exm-doctor-request-card {
+  width: 100%;
+  min-height: 66px;
+  padding: 11px 14px;
+  border: 1px solid rgba(148, 163, 184, 0.22);
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.72);
+  display: grid;
+  grid-template-columns: 44px minmax(0, 1fr) auto 16px;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+  text-align: left;
+  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.045);
+  transition:
+    transform 0.22s ease,
+    border-color 0.22s ease,
+    background 0.22s ease,
+    box-shadow 0.22s ease;
+}
+
+.exm-doctor-request-card:not(.exm-doctor-request-card-active):hover {
+  transform: translateY(-2px);
+  border-color: rgba(42, 157, 138, 0.35);
+  background: rgba(255, 255, 255, 0.94);
+  box-shadow: 0 18px 36px rgba(15, 23, 42, 0.08);
+}
+
+.exm-doctor-request-card-active {
+  border-color: rgba(42, 157, 138, 0.68);
+  background: linear-gradient(
+    135deg,
+    rgba(42, 157, 138, 0.15),
+    rgba(255, 255, 255, 0.96)
+  );
+  box-shadow:
+    0 16px 34px rgba(42, 157, 138, 0.11),
+    0 8px 20px rgba(15, 23, 42, 0.045);
+}
+
+.exm-doctor-request-card-active:hover {
+  transform: translateY(-1px);
+  border-color: rgba(42, 157, 138, 0.82);
+  background: linear-gradient(
+    135deg,
+    rgba(42, 157, 138, 0.19),
+    rgba(255, 255, 255, 0.98)
+  );
+  box-shadow:
+    0 18px 38px rgba(42, 157, 138, 0.13),
+    0 10px 24px rgba(15, 23, 42, 0.06);
+}
+
+.exm-doctor-request-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 15px;
+  background: rgba(42, 157, 138, 0.12);
+  border: 1px solid rgba(42, 157, 138, 0.20);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 19px;
+}
+
+.exm-doctor-request-icon span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.exm-doctor-request-main {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.exm-doctor-request-main strong {
+  color: #223047;
+  font-size: 13px;
+  font-weight: 950;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.exm-doctor-request-main span {
+  color: #718096;
+  font-size: 10.5px;
+  font-weight: 800;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.exm-doctor-request-meta {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.exm-doctor-request-meta span {
+  min-width: 68px;
+  height: 22px;
+  padding: 0 8px;
+  border-radius: 999px;
+  background: rgba(245, 158, 11, 0.14);
+  border: 1px solid rgba(245, 158, 11, 0.22);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #c27803;
+  font-size: 9px;
+  font-weight: 950;
+  letter-spacing: 0.35px;
+  text-transform: uppercase;
+}
+
+.exm-doctor-request-card-active .exm-doctor-request-meta span {
+  color: #0f927f;
+  background: rgba(42, 157, 138, 0.13);
+  border-color: rgba(42, 157, 138, 0.26);
+}
+
+.exm-doctor-request-arrow {
+  color: #2a9d8a;
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 1;
+}
+
+.exm-selected-summary {
+  margin-top: 22px;
+  padding: 18px;
+  border-radius: 22px;
+  border: 1px solid rgba(148, 163, 184, 0.20);
+  background: rgba(255, 255, 255, 0.72);
+  display: grid;
+  grid-template-columns: 58px minmax(0, 1fr);
+  align-items: center;
+  gap: 16px;
+  box-shadow: 0 12px 28px rgba(15, 23, 42, 0.05);
+}
+
+.exm-selected-icon-box {
+  width: 58px;
+  height: 58px;
+  border-radius: 19px;
+  background: rgba(42, 157, 138, 0.12);
+  border: 1px solid rgba(42, 157, 138, 0.20);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+}
+
+.exm-selected-info {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.exm-selected-info strong {
+  color: #223047;
+  font-size: 17px;
+  font-weight: 950;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.exm-selected-info span {
+  color: #718096;
+  font-size: 12px;
+  font-weight: 800;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.exm-selected-destination {
+  margin-top: 18px;
+}
+
+.exm-selected-destination h4 {
+  margin: 0 0 12px 0;
+  color: #223047;
+  font-size: 17px;
+  font-weight: 950;
+  letter-spacing: -0.2px;
+}
+
+.exm-selected-destination-card {
+  padding: 17px 18px;
+  border-radius: 20px;
+  border: 1px solid rgba(42, 157, 138, 0.28);
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  background: linear-gradient(
+    135deg,
+    rgba(42, 157, 138, 0.12),
+    rgba(255, 255, 255, 0.94)
+  );
+  box-shadow:
+    0 16px 34px rgba(42, 157, 138, 0.10),
+    0 8px 20px rgba(15, 23, 42, 0.045);
+}
+
+.exm-selected-destination-card strong {
+  color: #223047;
+  font-size: 16px;
+  font-weight: 950;
+}
+
+.exm-selected-destination-card span {
+  color: #2a9d8a;
+  font-size: 13px;
+  font-weight: 900;
+}
+
+.exm-selected-destination-card small {
+  color: #718096;
+  font-size: 12px;
+  font-weight: 850;
+}
+
+.exm-selected-destination-empty {
+  min-height: 92px;
+  padding: 18px;
+  border-radius: 20px;
+  border: 1px dashed rgba(148, 163, 184, 0.42);
+  background: rgba(248, 250, 252, 0.68);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #718096;
+  font-size: 14px;
+  font-weight: 800;
+  text-align: center;
+}
+
+.exm-panel-pill-file {
+  color: #c96b13;
+  background: rgba(245, 158, 11, 0.12);
+  border-color: rgba(245, 158, 11, 0.24);
+}
+
+.exm-upload-box {
+  margin-top: 18px;
+  min-height: 112px;
+  padding: 20px;
+  border-radius: 22px;
+  border: 2px dashed rgba(42, 157, 138, 0.44);
+  background: rgba(248, 250, 252, 0.58);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  cursor: pointer;
+  transition:
+    transform 0.22s ease,
+    border-color 0.22s ease,
+    background 0.22s ease,
+    box-shadow 0.22s ease;
+}
+
+.exm-upload-box:hover {
+  transform: translateY(-2px);
+  border-color: rgba(42, 157, 138, 0.68);
+  background: rgba(255, 255, 255, 0.78);
+}
+
+.exm-upload-box input {
+  display: none;
+}
+
+.exm-upload-icon {
+  color: #2a9d8a;
+  font-size: 31px;
+  font-weight: 950;
+  line-height: 1;
+}
+
+.exm-upload-box strong {
+  max-width: 100%;
+  color: #2a9d8a;
+  font-size: 17px;
+  font-weight: 950;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.exm-upload-box small {
+  color: #718096;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.exm-send-button {
+  width: 100%;
+  height: 52px;
+  margin-top: 14px;
+  border: none;
+  border-radius: 14px;
+  background: linear-gradient(
+    135deg,
+    #24b59f 0%,
+    #0f927f 100%
+  );
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 950;
+  letter-spacing: 0.9px;
+  cursor: pointer;
+  transition:
+    transform 0.22s ease,
+    box-shadow 0.22s ease,
+    filter 0.22s ease;
+}
+
+.exm-send-button:hover {
+  transform: translateY(-2px) scale(1.02);
+  filter: brightness(1.03);
+}
+
+.exm-send-button:active {
+  transform: translateY(0);
+}
+
+.exm-send-disabled,
+.exm-send-disabled:hover,
+.exm-send-disabled:active {
+  cursor: not-allowed;
+  transform: none;
+  filter: none;
+  color: rgba(255, 255, 255, 0.72);
+  background: linear-gradient(
+    135deg,
+    rgba(148, 163, 184, 0.75),
+    rgba(100, 116, 139, 0.75)
+  );
+  box-shadow: none;
+}

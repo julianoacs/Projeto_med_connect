@@ -1,0 +1,16 @@
+ALTER TABLE public.exames
+ADD CONSTRAINT exames_categoria_check
+CHECK (
+  categoria IN (
+    'HEMATOLOGIA',
+    'BIOQUÍMICA',
+    'RADIOGRAFIA',
+    'ULTRASSONOGRAFIA',
+    'RESSONÂNCIA MAGNÉTICA',
+    'TOMOGRAFIA COMPUTADORIZADA',
+    'DOSAGEM DE MINERAIS',
+    'IMAGEM',
+    'LABORATORIAL',
+    'OUTROS'
+  )
+);

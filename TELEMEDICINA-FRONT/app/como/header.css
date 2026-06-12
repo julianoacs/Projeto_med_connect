@@ -1,0 +1,102 @@
+@media (min-width: 1280px) and (max-width: 1366px) {
+
+  .header-shell {
+    position: relative;
+    margin-top: 6px !important;
+  }
+
+  .header-brand {
+    margin-left: -30px !important;
+  }
+
+  .header-nav {
+    font-size: 1rem !important;
+    gap: 2.5rem !important;
+  }
+}
+
+@media (min-width: 1367px) and (max-width: 1440px) {
+
+  .header-shell {
+    position: relative;
+    margin-top: 8px !important;
+  }
+
+  .header-brand {
+    margin-left: -25px !important;
+  }
+
+  .header-nav {
+    font-size: 1.02rem !important;
+    gap: 2.8rem !important;
+  }
+}
+
+@media (min-width: 1441px) and (max-width: 1600px) {
+
+  .header-shell {
+    position: relative;
+    margin-top: 10px !important;
+  }
+
+  .header-brand {
+    margin-left: -20px !important;
+  }
+
+  .header-nav {
+    font-size: 1.05rem !important;
+    gap: 3rem !important;
+  }
+}
+
+@media (min-width: 1601px) and (max-width: 1920px) {
+
+  .header-shell {
+    position: relative;
+    margin-top: 10px !important;
+  }
+
+  .header-brand {
+    margin-left: -15px !important;
+  }
+
+    .header-nav {
+    font-size: 1.1rem !important;
+    gap: 3.5rem !important;
+  }
+}
+
+@media (min-width: 1921px) and (max-width: 2559px) {
+
+  .header-shell {
+    position: relative;
+    margin-top: 15px !important;
+  }
+
+  .header-brand {
+    margin-left: -10px !important;
+  }
+
+  .header-nav {
+    font-size: 1.15rem !important;
+    gap: 4rem !important;
+  }
+}
+
+@media (min-width: 2560px) and (max-width: 3439px) {
+
+  .header-shell {
+    position: relative;
+    margin-top: 20px !important;
+  }
+
+  .header-brand {
+    margin-left: 0px !important;
+  }
+
+  .header-nav {
+    font-size: 1.25rem !important;
+    gap: 5rem !important;
+  }
+}
+

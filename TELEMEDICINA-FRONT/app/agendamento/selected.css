@@ -1,0 +1,72 @@
+.agd-special-medico-card.agd-special-medico-selected {
+  border-color: #2a9d8a;
+  background: rgba(42, 157, 138, 0.09);
+  box-shadow: 0 14px 28px rgba(42, 157, 138, 0.18);
+}
+
+.agd-special-medico-card.agd-special-medico-selected .agd-special-medico-arrow {
+  color: #2a9d8a;
+}
+
+.agd-reason-card.agd-reason-selected {
+  border-color: #2a9d8a;
+  background: rgba(42, 157, 138, 0.09);
+  box-shadow: 0 14px 28px rgba(42, 157, 138, 0.18);
+}
+
+.agd-reason-card.agd-reason-selected span {
+  color: #2a9d8a;
+}
+
+.agd-reason-card.agd-reason-selected .agd-reason-icon {
+  filter: drop-shadow(0 8px 14px rgba(124, 58, 237, 0.22));
+}
+
+.agd-date-card.agd-date-selected {
+  border-color: #2a9d8a;
+  background: rgba(42, 157, 138, 0.555);
+  box-shadow: 0 14px 28px rgba(42, 157, 138, 0.18);
+}
+
+.agd-date-card.agd-date-selected strong,
+.agd-date-card.agd-date-selected span,
+.agd-date-card.agd-date-selected small {
+  color: #ffffff;
+}
+
+.agd-hour-card.agd-hour-selected {
+  border-color: #2a9d8a;
+  background: rgba(42, 157, 138, 0.09);
+  color: #2a9d8a;
+  box-shadow: 0 14px 28px rgba(42, 157, 138, 0.18);
+}
+
+.agd-hour-card.agd-hour-disabled {
+  opacity: 0.42;
+  cursor: not-allowed;
+  background: rgba(148, 163, 184, 0.12);
+  color: #6a7686;
+  border-color: rgba(148, 163, 184, 0.22);
+  box-shadow: none;
+}
+
+.agd-date-card.agd-date-disabled {
+  opacity: 0.42;
+  cursor: not-allowed;
+  background: rgba(148, 163, 184, 0.12);
+  color: #6a7686;
+  border-color: rgba(148, 163, 184, 0.22);
+  box-shadow: none;
+}
+
+.agd-date-card.agd-date-disabled strong,
+.agd-date-card.agd-date-disabled span,
+.agd-date-card.agd-date-disabled small {
+  color: #6a7686;
+}
+
+.agd-date-card.agd-date-disabled:hover {
+  transform: none;
+  background: rgba(148, 163, 184, 0.12);
+  box-shadow: none;
+}

@@ -1,0 +1,88 @@
+.agd-new-schedule-section,
+.agd-my-schedule-section {
+  margin-top: 80px;
+  margin-left: 170px;
+  width: 1080px;
+  min-height: 390px;
+  animation: agdContentIn 0.25s ease forwards;
+}
+
+.agd-specialty-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px 34px;
+}
+
+.agd-specialty-card {
+  height: 120px;
+  border: none;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.84);
+  box-shadow: 0 16px 38px rgba(15, 23, 42, 0.10);
+  cursor: pointer;
+
+  display: grid;
+  grid-template-columns: 120px 1fr 50px;
+  align-items: center;
+
+  transition:
+    transform 0.22s ease,
+    box-shadow 0.22s ease,
+    background 0.22s ease;
+}
+
+.agd-specialty-card:hover {
+  transform: translateY(-4px);
+  background: rgba(255, 255, 255, 0.96);
+  box-shadow: 0 22px 48px rgba(15, 23, 42, 0.16);
+}
+
+.agd-specialty-icon {
+  width: 78px;
+  height: 78px;
+  object-fit: contain;
+  justify-self: center;
+}
+
+.agd-specialty-name {
+  font-size: 23px;
+  font-weight: 950;
+  color: #1f2937;
+  text-align: left;
+}
+
+.agd-specialty-arrow {
+  font-size: 50px;
+  font-weight: 200;
+  color: #2a9d8a;
+  justify-self: center;
+  transform: translateY(-5px) translateX(-10px);
+
+  transition:
+    transform 0.22s ease,
+    color 0.22s ease;
+}
+
+.agd-specialty-card:hover {
+  transform:translateY(-5px);
+  color: #008f7a;
+  border: 1px solid #2a9d8a;
+}
+
+.agd-my-schedule-section h3 {
+  font-size: 20px;
+  font-weight: 950;
+  color: #1f2937;
+}
+
+@keyframes agdContentIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

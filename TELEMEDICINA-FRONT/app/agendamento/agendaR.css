@@ -1,0 +1,174 @@
+.agd-special-right {
+  margin-top: 40px;
+  width: 600px;
+  height: 594px;
+  border-radius: 22px;
+  background: rgba(255, 255, 255, 0.86);
+  border: 1px solid rgba(226, 232, 240, 0.85);
+  box-shadow: 0 14px 34px rgba(15, 23, 42, 0.08);
+  padding: 30px;
+}
+
+.agd-special-right-header h3 {
+  font-size: 22px;
+  font-weight: 950;
+  color: #1f2937;
+}
+
+.agd-special-right-header p {
+  margin-top: 6px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #64748b;
+}
+
+.agd-date-row {
+  margin-top: 26px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+}
+
+.agd-date-card {
+  height: 94px;
+  border-radius: 14px;
+  border: 1px solid rgba(226, 232, 240, 0.9);
+  background: rgba(255, 255, 255, 0.86);
+  cursor: pointer;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.agd-date-card strong {
+  font-size: 14px;
+  font-weight: 900;
+  color: #1f2937;
+}
+
+.agd-date-card span {
+  margin-top: 5px;
+  font-size: 24px;
+  font-weight: 950;
+  color: #1f2937;
+}
+
+.agd-date-card small {
+  margin-top: 3px;
+  font-size: 12px;
+  font-weight: 800;
+  color: #64748b;
+}
+
+.agd-date-selected {
+  background: #2a9d8a;
+  border-color: #2a9d8a;
+}
+
+.agd-date-selected strong,
+.agd-date-selected span,
+.agd-date-selected small {
+  color: #ffffff;
+}
+
+.agd-date-carousel {
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: 42px 2fr 42px;
+  align-items: center;
+  gap: 14px;
+}
+
+.agd-date-arrow {
+  height: 38px;
+  width: 38px;
+  border: none;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.86);
+  border: 1px solid #dfdfdf8f;
+  color: #2a9d8a;
+  font-size: 32px;
+  font-weight: 950;
+  cursor: pointer;
+  box-shadow: 0 10px 22px rgba(15, 23, 42, 0.08);
+  justify-content: contain;
+  transition: 
+    transform 0.25s ease;
+}
+
+.agd-date-arrow:hover {
+  border: 1px solid #2a9d8a;
+  box-shadow: 0 10px 22px rgba(15, 23, 42, 0.08);
+}
+
+.agd-date-row {
+  transform: translateY(-5px);
+}
+
+.agd-date-arrow-icon {
+  display: block;
+  line-height: 1;
+  transform: translateY(-2px);
+  font-weight: 550;
+}
+
+/*==================================================*/
+
+.agd-hour-grid {
+  margin-top: 26px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+
+.agd-hour-card {
+  height: 50px;
+  border-radius: 12px;
+  border: 1px solid rgba(226, 232, 240, 0.9);
+  background: rgba(255, 255, 255, 0.86);
+  color: #1f2937;
+  font-size: 15px;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.agd-hour-card:hover {
+  border-color: rgba(42, 157, 138, 0.65);
+  color: #2a9d8a;
+}
+
+.agd-hour-selected {
+  border: 2px solid rgba(42, 157, 138, 0.75);
+  background: rgba(42, 157, 138, 0.12);
+  color: #2a9d8a;
+
+  transform: translateY(-2px);
+}
+
+.agd-hour-selected:hover {
+  border-color: 2px solid rgba(42, 157, 138, 0.85);
+  color: #2a9d8a;
+}
+
+.agd-continue-button {
+  margin-top: 28px;
+  width: 100%;
+  height: 54px;
+  border: none;
+  border-radius: 14px;
+  background: #2a9d8a;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 950;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  transition: 
+    transform 0.23s ease;
+}
+
+.agd-continue-button:hover {
+  transform: translateY(-5);
+   background: rgba(42, 157, 138, 0.888);
+}

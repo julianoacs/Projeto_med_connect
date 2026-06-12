@@ -1,0 +1,79 @@
+.notify-box-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.box-view {
+  width: 800px;
+  height: 700px;
+  margin-top: 50px;
+  margin-left: 80px;
+  padding: 24px 26px;
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.82);
+  border: 1px solid rgba(255, 255, 255, 0.75);
+  box-shadow:
+    0 18px 45px rgba(15, 23, 42, 0.08),
+    inset 0 1px 0 rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(18px);
+}
+
+.notifications-tabs {
+  display: flex;
+  align-items: center;
+  gap: 160px;
+  padding: 5px 20px 20px 20px;
+  margin-left: 10px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.notification-tab {
+  position: relative;
+  height: 42px;
+  padding: 0 26px;
+  border: 0;
+  border-radius: 9px;
+  background: transparent;
+  color: #4f5d7b;
+  font-size: 15px;
+  font-weight: 800;
+  cursor: pointer;
+  transition: color 0.25s ease, background 0.25s ease;
+}
+
+.notification-tab span {
+  position: relative;
+  z-index: 2;
+  white-space: nowrap;
+}
+
+.notification-tab:hover {
+  color: #2a9d8a;
+}
+
+.notifications-list {
+  padding-top: 28px;
+}
+
+.tab-line {
+  position: absolute;
+  width: 2px;
+  height: 0;
+  border-radius: 999px;
+  background: #2a9d8a;
+  transform: translateY(-10%);
+  transition: height 0.25s ease;
+}
+
+.tab-line.left {
+  left: 8px;
+}
+
+.tab-line.right {
+  right: 8px;
+}
+
+.notification-tab:hover .tab-line {
+  height: 30px;
+}

@@ -1,0 +1,49 @@
+.next-consult-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.next-consult-doctor {
+  font-size: 34px;
+  font-weight: 950;
+  color: #020617;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+
+.next-consult-specialty {
+  margin-top: 8px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #64748b;
+}
+
+.next-consult-meta-row {
+  margin-top: 28px;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.next-consult-meta-item {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  color: #64748b;
+  font-size: 17px;
+  font-weight: 800;
+}
+
+.next-consult-meta-icon {
+  font-size: 22px;
+  color: #64748b;
+  line-height: 1;
+}
+
+.next-consult-meta-separator {
+  width: 2px;
+  height: 24px;
+  border-radius: 999px;
+  background: rgba(42, 157, 138, 0.18);
+}
